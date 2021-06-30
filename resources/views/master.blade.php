@@ -21,4 +21,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
 
+<style>
+    .custom-login {
+        height: 450px;
+        padding-top: 100px;
+    }
+
+</style>
+
 </html>
