@@ -26,6 +26,36 @@
         height: 450px;
         padding-top: 100px;
     }
+    img.slider-img{
+        height:400px !important;
+        margin-left: 150px;
+    }
+    .slider-text{
+        /* 
+        font-weight: bold;
+        margin-top: -200px; */
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);        padding: 20px;
+    }
+    .custom-product{
+        height: 600px;
+    }
+    .tranding-image{
+        height: 150px;
+
+    }
+    .tranding-item{
+        float: left;
+        width: 20%;
+    }
+    .tranding-wrapper{
+        margin:30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .single-page-img{
+        height: 400px;
+    }
+
 
 </style>
 
