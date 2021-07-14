@@ -49,11 +49,16 @@
     }
     .tranding-wrapper{
         margin:30px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .single-page-img{
         height: 400px;
+    }
+
+    .search-item{
+        width:500px;
+        text-align: center;
     }
 
 
