@@ -11,14 +11,28 @@
                     <div class="tranding-wrapper">
                         
                         @foreach($products as $product)
-                            <a href="{{ route('product.show', $product->id)}}">
+                            {{-- <a href="{{ route('product.show', $product->id)}}">
                                 <div class="tranding-item">
                                     <img class="tranding-image" src="{{ $product->gallery }}" alt="">
                                     <div class="">
-                                        <h5>{{ $product->name }}</h5>
+                                        <h4>{{ $product->name }}</h4>
+                                        <p>{{ $product->description }}</p>
                                     </div>
                                 </div>
-                            </a>
+                            </a> --}}
+
+                            <div class="col-md-12">
+                                <div class="card" style="width: 30%;">
+                                    <a href="{{ route('product.show' , $product->id) }}">
+                                        <img class="card-img-top" src="{{ $product->gallery }}" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{ $product->name }}</h5>
+                                      <p class="card-text">{{ $product->description }}</p>
+                                      <a href="{{ route('product.show' , $product->id) }}" class="btn btn-primary">View</a>
+                                    </div>
+                                  </div>
+                            </div>
                         @endforeach
                     </div>
                 </div>
