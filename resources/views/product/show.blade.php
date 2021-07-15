@@ -17,8 +17,13 @@
 
             <br> <br>
 
-            <button class="btn btn-success">Add to Cart</button>
+            <form action="{{ route('add-to-cart',$product) }}" method="post">
+                @csrf
+                <input type="hidden" value="{{ $product->id }}" name="product_id">
+                <button class="btn btn-success">Add to Cart</button>
+            </form>
             <br><br>
+            
             <button class="btn btn-primary">Buy Now</button>
         </div>
 
