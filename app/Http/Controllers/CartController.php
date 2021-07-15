@@ -20,4 +20,10 @@ class CartController extends Controller
             return redirect('login');
         }
     }
+
+    static function cartItem()
+    {
+        $userId = session()->get('user')['id'];
+        return Cart::where('user_id', $userId)->count();
+    }
 }

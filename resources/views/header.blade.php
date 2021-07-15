@@ -1,3 +1,7 @@
+<?php 
+use App\Http\Controllers\CartController;
+$totalCartItem = CartController::cartItem();
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -17,7 +21,7 @@
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Cart(0)</a>
+                    <a class="nav-link" aria-current="page" href="#">Cart ({{ $totalCartItem }})</a>
                 </li>
             </ul>
             <form class="d-flex" action="{{ route('search') }}">
